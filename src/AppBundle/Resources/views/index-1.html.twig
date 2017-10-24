@@ -1,0 +1,150 @@
+{% extends '@App/base.html.twig' %}
+{% block body %}
+<!-- header -->
+<header>
+	<div class="container_16">
+		<div class="logo">
+			<h1><a href="{{ path('homepage') }}"><strong>Real</strong> Estate</a></h1>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="{{ path('homepage') }}">Home</a></li>
+				<li><a href="{{ path('home1') }}" class="current">Selling</a></li>
+				<li><a href="{{ path('home2') }}">Buying</a></li>
+				<li><a href="{{ path('home3') }}">Renting</a></li>
+				<li><a href="{{ path('home4') }}">Moving</a></li>
+				<li><a href="{{ path('home5') }}">Finance</a></li>
+				<li><a href="{{ path('home6') }}">Contacts</a></li>
+			</ul>
+		</nav>
+		<!-- faded slider begin -->
+		<div id="faded">
+			<div class="rap">
+				<a href="#"><img src="{{ asset('images/big-img1.jpg') }}" alt="" width="571" height="398"></a>
+				<a href="#"><img src="{{ asset('images/big-img2.jpg') }}" alt="" width="571" height="398"></a>
+				<a href="#"><img src="{{ asset('images/big-img2.jpg') }}" alt="" width="571" height="398"></a>
+			</div>
+			<ul class="pagination">
+				<li>
+					<a href="#" rel="0">
+						<img src="{{ asset('images/f_thumb1.png') }}" alt="">
+						<span class="left">
+							Villa<br />
+							2007 year<br />
+							5000 sq.ft
+						</span>
+						<span class="right">
+							Brick, glass<br />
+							3 beds<br />
+							2 baths
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" rel="1">
+						<img src="{{ asset('images/f_thumb2.png') }}" alt="">
+						<span class="left">
+							Villa<br />
+							2009 year<br />
+							3500 sq.ft
+						</span>
+						<span class="right">
+							Brick, glass<br />
+							5 beds<br />
+							3 baths
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" rel="2">
+						<img src="{{ asset('images/f_thumb3.png') }}" alt="">
+						<span class="left">
+							Villa<br />
+							2010 year<br />
+							4200 sq.ft
+						</span>
+						<span class="right">
+							Brick, glass<br />
+							4 beds<br />
+							3 baths
+						</span>
+					</a>
+				</li>
+			</ul>
+			<img src="{{ asset('images/extra-banner.png') }}" alt="" class="extra-banner">
+		</div>
+		<!-- faded slider end -->
+	</div>
+</header>
+<!-- content -->
+<section id="content">
+	<div class="container_16">
+		<div class="clearfix">
+			<section id="mainContent" class="grid_10">
+				<article>
+					<h2>Home Value Estimator</h2>
+					<div class="wrapper">
+						<figure><img src="{{ asset('images/2page-img1.jpg') }}" alt=""></figure>
+						<h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit Praesent vestibulum moles tie lacuseneane nonummy. </h3>
+						<p>Portsce suscipit va sociis natoque penatibus et magnis dis parturienetontes nascetur ridiculus musulla dutusce feugiat malesuada odorbi nunc odio gravida at cursus nec luctus alorem.</p>
+						<a href="#" class="button">Read More</a>
+					</div>
+				</article>
+				<article class="last">
+					<h2>Mortgage Center</h2>
+					<hgroup>
+						<h5>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis. </h5>
+						<h4>Nulla dsce feugiat malesuada odiobi nunc odio gravida at cursus nec luctusa loremaece nas trism dolor sit aconsecteetuer adipiscinges elitraesent</h4>
+					</hgroup>
+					<div class="img-box">
+						<figure><img src="{{ asset('images/2page-img2.jpg') }}" alt=""></figure>
+						<p>Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque sed dolor. Aliquam congue fermentum nisl.</p>
+						<p>Mauris accumsan nulla vel diam. Sed in lacus ut enim adipiscing aliquet. Nulla venenatis.</p>
+						In pede mi aliuet sit amet, euismod in, auctor ut, ligula. Aliquam dapibus tincidunt metus. Praesent justo dolor, lobortis quis.
+					</div>
+					<p>Maurihasellus portsce suscipit varium sociis natoque penatibus et magnis dis parturienetontes nascetur ridiculus musulla dutusce feugiat malesuada odorbi nunc odio gravida at cursus nec luctus alorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. </p>
+					<a href="#" class="button">Read More</a>
+				</article>
+			</section>
+			<aside class="grid_6">
+				<div class="prefix_1">
+					<article>
+						<!-- .box -->
+						<div class="box">
+							<h2>Find a Sell Associate</h2>
+							<h3><a href="#">Sed ut perspiciatis unde</a></h3>
+							<p>Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+							<p>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
+						</div>
+						<!-- /.box -->
+					</article>
+					<article class="last">
+						<h2>Find Sales</h2>
+						<h4>Nulla dsce feugiat malesuada odiobi nunc odio gravida at cursus nec luctusa loremaece nas trism dolor sit aconsecteetuer adipiscinges elitraesent.</h4>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.</p>
+						<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.</p>
+						<a href="#" class="button">Read More</a>
+					</article>
+				</div>
+			</aside>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<footer>
+	<div class="container_16">
+		<nav>
+			<ul>
+				<li><a href="{{ path('homepage') }}">home</a></li>
+				<li><a href="{{ path('home1') }}">Selling</a></li>
+				<li><a href="{{ path('home2') }}">buying</a></li>
+				<li><a href="{{ path('home3') }}">renting</a></li>
+				<li><a href="{{ path('home4') }}">moving</a></li>
+				<li><a href="{{ path('home5') }}">finance</a></li>
+				<li><a href="{{ path('home6') }}">contacts</a></li>
+			</ul>
+		</nav>
+		<p class="copy"><span>real estate</span> &nbsp;&copy; &nbsp;2010 &nbsp; &nbsp;<a href="{{ path('home7') }}">Privacy Policy</a></p>
+	</div>
+</footer>
+{% endblock %}

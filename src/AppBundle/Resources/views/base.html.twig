@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{ asset('css/reset.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" href="{{ asset('css/grid.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all">
+        <script type="text/javascript" src="{{ asset('js/jquery-1.4.2.min.js') }}" ></script>
+        <script type="text/javascript" src="{{ asset('js/cufon-yui.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/Myriad_Pro_italic_400-Myriad_Pro_italic_600.font.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/cufon-replace.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery.faded.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+        <script type="text/javascript">
+            $(function(){
+                //accordion
+                $(".accordion dt").toggle(function(){
+                    $(this).next().slideDown();
+                }, function(){
+                    $(this).next().slideUp();
+                });
+            })
+        </script>
+        <script type="text/javascript"> Cufon.now(); </script>
+    </body>
+</html>
